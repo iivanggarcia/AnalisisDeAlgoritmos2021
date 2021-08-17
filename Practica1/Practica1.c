@@ -19,13 +19,13 @@ int main(int argc, char *argv[]) {
     
 	int j, k,temp;
    	for (j = 0; j < num-1; j++){
-   			for (k = 0; k < num-j-1; k++) {
-   					if (numeroAleatorio[k] > numeroAleatorio[k+1]){
-		           		temp = numeroAleatorio[k];
-					    numeroAleatorio[k] = numeroAleatorio[k+1];
-					    numeroAleatorio[k+1] = temp;
-				   }
-			   }
+		for (k = 0; k < num-j-1; k++) {
+			if (numeroAleatorio[k] > numeroAleatorio[k+1]){
+           		temp = numeroAleatorio[k];
+			    numeroAleatorio[k] = numeroAleatorio[k+1];
+			    numeroAleatorio[k+1] = temp;
+		   }
+		   }
 	   }
     
     printf("Los %d numeros ordenados son: \n", num);
